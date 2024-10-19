@@ -131,6 +131,9 @@ class Model_VSN(BaseModel):
             for i in range(out.shape[1]):
                 l_forw_fit += self.train_opt['lambda_fit_forw'] * self.Reconstruction_forw(out[:, i], y[:, i])
             return l_forw_fit
+        
+        """ CHANGE """
+        # babalaba
 
     def loss_back_rec(self, out, x):
         if self.opt['model'] == 'LSTM-VRN':
